@@ -1,0 +1,38 @@
+<html>
+<head><title>js task</title></head>
+<body>
+	<script>
+		const emp={
+			name:"Riya",
+			age:25,
+			isEmployee:"True",
+			city:null,
+			email:undefined,
+			skills:["Javascript","HTML","CSS"],
+			address:{street:"MG Road",zip:380024}
+		}
+		console.log("Original Object:",emp);
+		emp.country="India";
+		console.log("After india added:",emp);
+
+		delete emp.email;
+		console.log("After email remove from object:",emp);
+		
+		emp.name="Raju";
+		console.log("After update Riya to Raju in object of employee:",emp);
+		
+	emp.skills.push("React");
+	console.log("AFter update skills array add React as the last element in array:",emp);
+	
+	 emp.address.street="Brigade Road";
+	console.log("AFter update change value of the street property to :",emp);
+
+	console.table(emp);
+	
+	console.log("Below shows the type of each property value:");	
+	for(let i in emp){
+		console.log(i,":",typeof emp[i]);
+	}
+	</script>
+</body>
+</html>

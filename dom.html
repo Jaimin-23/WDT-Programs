@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects in Javascript</title>
+</head>
+<body>
+	<h3>DOM Manipulation</h3>
+	<div id="para1">Hello</div>
+	<div class="note">I am learning JS</div>
+	
+	<script>
+		//document.getElementById("para1").innerHTML="<b>world</b>";
+		//document.getElementById("para1").textContent="<B>world</B>";
+		/*let para=document.getElementById("para1");
+		para.style.backgroundColor="blue";
+		para.style.color="white";
+		para.style.fontSize="100px";
+		para.style.fontWeight="bold";*/
+		let para=document.querySelector("#para1");
+		para.style.backgroundColor="yellow";
+		
+		let note=document.querySelector(".note");
+		note.style.fontSize="100px";
+	</script>
+</body>
+</html>
